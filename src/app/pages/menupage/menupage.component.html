@@ -1,0 +1,22 @@
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-lg-6" *ngIf="menuData">
+            <a routerLink="../../contact" class="btn btn-sm btn-dark mb-3">Back  </a>
+            <img src="{{menuData[0].foodImg}}" width="100%" />
+            <h1 class="mt-3 ">{{menuData[0].foodName}}</h1>
+            <p>{{menuData[0].foodDetails}}</p>
+            <p>{{menuData[0].foodPrice | currency:''}}</p>
+        </div>
+        <div class="col-lg-6">
+            <h1>Apna Aata Pata Bhariye </h1>
+            <form>
+                <input type="text" class="form-control" placeholder="dalo apna naam laudasur"/>
+                <input type="text" class="form-control" placeholder="Number bhi daldeyreh dewa"/>
+                <textarea class="form-control" placeholder="Kidar ka reh tuh"></textarea>
+                <button class="btn btn-md btn-dark mt-3">Place Order</button>
+
+            </form>
+        </div>
+    </div>
+
+</div>
